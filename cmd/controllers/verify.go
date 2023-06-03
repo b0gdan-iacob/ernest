@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
@@ -6,7 +6,7 @@ package controllers
 import (
 	"strings"
 
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 )
 
 func VerifyEmail(email string) {

@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package utils
@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/b0gdan-iacob/oreste/cmd/models"
+	"github.com/b0gdan-iacob/ernest/cmd/models"
 	"github.com/fatih/color"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
@@ -23,7 +23,7 @@ func SetAPIKey(key string, value string) {
 		color.Red("Error getting home directory")
 		log.Fatal(err.Error())
 	}
-	data, err := os.ReadFile(dirname + "/oreste-config.json")
+	data, err := os.ReadFile(dirname + "/ernest-config.json")
 	if err != nil {
 		log.Fatal(err.Error())
 	}
@@ -38,7 +38,7 @@ func SetAPIKey(key string, value string) {
 	if err != nil {
 		log.Fatal(err.Error())
 	}
-	_ = os.WriteFile(dirname+"/oreste-config.json", file, 0644)
+	_ = os.WriteFile(dirname+"/ernest-config.json", file, 0644)
 	fmt.Println("[", color.BlueString("INFO"), "] API key set successfully!")
 
 }
@@ -49,7 +49,7 @@ func CreateConfig() {
 		color.Red("Error getting home directory")
 		log.Fatal(err.Error())
 	}
-	if _, err := os.Stat(dirname + "/oreste-config.json"); os.IsNotExist(err) {
+	if _, err := os.Stat(dirname + "/ernest-config.json"); os.IsNotExist(err) {
 		config := models.ConfigStruct{
 			Breachdirectory: "",
 			Hunter:          "",
@@ -59,11 +59,11 @@ func CreateConfig() {
 		}
 
 		file, _ := json.MarshalIndent(config, "", " ")
-		_ = os.WriteFile(dirname+"/oreste-config.json", file, 0644)
+		_ = os.WriteFile(dirname+"/ernest-config.json", file, 0644)
 		var example string
-		fmt.Println("\n[", color.BlueString("INFO"), "] Config file created at "+dirname+"/oreste-config.json ")
-		fmt.Println("[", color.BlueString("INFO"), "] If you want to use oreste with full features, set your API keys.")
-		example = "oreste set hunter <hunter.io API key>\n oreste set emailrep <emailrep.io API key>\n oreste set intelx <intelx.io API key>\n oreste set psbdmp <psbdmp.ws API key>\n oreste set breachdirectory <breachdirectory.org API key>"
+		fmt.Println("\n[", color.BlueString("INFO"), "] Config file created at "+dirname+"/ernest-config.json ")
+		fmt.Println("[", color.BlueString("INFO"), "] If you want to use ernest with full features, set your API keys.")
+		example = "ernest set hunter <hunter.io API key>\n ernest set emailrep <emailrep.io API key>\n ernest set intelx <intelx.io API key>\n ernest set psbdmp <psbdmp.ws API key>\n ernest set breachdirectory <breachdirectory.org API key>"
 		fmt.Println("Examples: \n", example)
 
 	}
@@ -75,7 +75,7 @@ func GetAPIKey(key string) string {
 		color.Red("Error getting home directory")
 		log.Fatal(err.Error())
 	}
-	data, err := os.ReadFile(dirname + "/oreste-config.json")
+	data, err := os.ReadFile(dirname + "/ernest-config.json")
 	if err != nil {
 		log.Fatal(err.Error())
 	}

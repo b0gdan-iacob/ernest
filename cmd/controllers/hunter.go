@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 )
 
 func Hunter(email string) {
@@ -20,7 +20,7 @@ func Hunter(email string) {
 	}
 	client := &http.Client{}
 	req, _ := http.NewRequest("GET", utils.HunterAPI+strings.Split(email, "@")[1]+"&api_key="+key, nil)
-	req.Header.Set("User-Agent", "oreste")
+	req.Header.Set("User-Agent", "ernest")
 	resp, _ := client.Do(req)
 	body, _ := io.ReadAll(resp.Body)
 	json.Unmarshal(body, &utils.Hunter_result)

@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 )
 
 func IPAPI(email string) {
@@ -26,7 +26,7 @@ func IPAPI(email string) {
 	if ip4api != "" {
 		client := &http.Client{}
 		req, _ := http.NewRequest("GET", utils.IPAPIURL+ip4api+"/json/", nil)
-		req.Header.Set("User-Agent", "oreste")
+		req.Header.Set("User-Agent", "ernest")
 		resp, _ := client.Do(req)
 		body, _ := io.ReadAll(resp.Body)
 		json.Unmarshal(body, &utils.Ipapi_result)

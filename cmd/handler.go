@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package cmd
@@ -6,8 +6,8 @@ package cmd
 import (
 	"os"
 
-	"github.com/b0gdan-iacob/oreste/cmd/controllers"
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/controllers"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 	"github.com/fatih/color"
 	"github.com/gammazero/workerpool"
 	"github.com/spf13/cobra"

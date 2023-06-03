@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/IntelligenceX/SDK/Go/ixapi"
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 )
 
 func Intelx(email string) {

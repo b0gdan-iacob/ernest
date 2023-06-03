@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
@@ -8,7 +8,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 )
 
 func EmailRep(email string) {
@@ -20,7 +20,7 @@ func EmailRep(email string) {
 	client := &http.Client{}
 	req, _ := http.NewRequest("GET", utils.EmailrepURL+email, nil)
 	req.Header.Set("Key", key)
-	req.Header.Set("User-Agent", "oreste")
+	req.Header.Set("User-Agent", "ernest")
 	resp, _ := client.Do(req)
 	body, _ := io.ReadAll(resp.Body)
 	json.Unmarshal(body, &utils.Emailrep_result)

@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
@@ -8,7 +8,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 )
 
 func Psbdmp(email string) {
@@ -22,7 +22,7 @@ func Psbdmp(email string) {
 	if err != nil {
 		panic(err)
 	}
-	req.Header.Set("User-Agent", "oreste")
+	req.Header.Set("User-Agent", "ernest")
 	resp, err := client.Do(req)
 	if err != nil {
 		panic(err)

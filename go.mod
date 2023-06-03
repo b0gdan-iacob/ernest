@@ -1,4 +1,4 @@
-module github.com/b0gdan-iacob/oreste
+module github.com/b0gdan-iacob/ernest
 
 go 1.19
 

@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package cmd
@@ -6,7 +6,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 	"github.com/dimiro1/banner"
 	"github.com/mattn/go-colorable"
 	"github.com/schollz/progressbar/v3"
@@ -14,7 +14,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:          "oreste [email]",
+	Use:          "ernest [email]",
 	Short:        "\nAn automated e-mail OSINT tool",
 	Long:         "\nAn automated e-mail OSINT tool",
 	SilenceUsage: true,

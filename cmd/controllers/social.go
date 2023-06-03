@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
@@ -13,8 +13,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/b0gdan-iacob/oreste/cmd/models"
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/models"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 )
 
 func Adobe(email string) {

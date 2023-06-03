@@ -1,4 +1,4 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package utils
@@ -7,7 +7,7 @@ import (
 	"os"
 
 	emailverifier "github.com/AfterShip/email-verifier"
-	"github.com/b0gdan-iacob/oreste/cmd/models"
+	"github.com/b0gdan-iacob/ernest/cmd/models"
 	"github.com/olekukonko/tablewriter"
 	"github.com/schollz/progressbar/v3"
 )
@@ -28,7 +28,7 @@ var (
 	ConfigReturn   map[string]interface{}
 	ProgressBar    *progressbar.ProgressBar = nil
 	LookupTable    *tablewriter.Table       = tablewriter.NewWriter(os.Stdout)
-	BannerTemplate string                   = `{{ .Title "oreste" "" 2 }}
+	BannerTemplate string                   = `{{ .Title "ernest" "" 2 }}
 {{ .AnsiColor.BrightWhite }}v0.1{{ .AnsiColor.Default }}
 {{ .AnsiColor.BrightCyan }}{{ .AnsiColor.Default }}
 Now: {{ .Now "Monday, 2 Jan 2006" }}`

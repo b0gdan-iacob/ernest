@@ -1,10 +1,10 @@
-// oreste v0.1
+// ernest v0.1
 
 
 package controllers
 
 import (
-	"github.com/b0gdan-iacob/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/ernest/cmd/utils"
 	googlesearch "github.com/rocketlaunchr/google-search"
 )
 

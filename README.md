@@ -1,8 +1,8 @@
-# oreste
+# ernest
 
-## What is the oreste
+## What is the ernest
 
-Oreste is yet another OSINT Tool for research porposes only. It allows you to gather information about the target via email, phone or image and generate an report.
+ernest is yet another OSINT Tool for research porposes only. It allows you to gather information about the target via email, phone or image and generate an report.
 
 #### Features: :eyes:
 
@@ -31,20 +31,20 @@ Oreste is yet another OSINT Tool for research porposes only. It allows you to ga
 
 :key: API key required
 
-#### If you want to use oreste with full features, set your API keys:
+#### If you want to use ernest with full features, set your API keys:
 
 ```
- oreste set hunter <hunter.io API key>
- oreste set emailrep <emailrep.io API key>
- oreste set intelx <intelx.io API key>
- oreste set psbdmp <psbdmp.ws API key>
- oreste set breachdirectory <breachdirectory.org API key>
+ ernest set hunter <hunter.io API key>
+ ernest set emailrep <emailrep.io API key>
+ ernest set intelx <intelx.io API key>
+ ernest set psbdmp <psbdmp.ws API key>
+ ernest set breachdirectory <breachdirectory.org API key>
 ```
 
 ## Installation:
 
 ```
-go install -v github.com/b0gdan-iacob/oreste@latest
+go install -v github.com/b0gdan-iacob/ernest@latest
 ```
 
 ## Usage:
@@ -52,5 +52,5 @@ go install -v github.com/b0gdan-iacob/oreste@latest
 Email(mosint):
 
 ```
-oreste example@email.com
+ernest example@email.com
 ```
