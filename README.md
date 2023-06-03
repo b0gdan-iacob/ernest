@@ -1,12 +1,8 @@
 # oreste
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/alpkeskin/oreste/master/banner2-3.png" width="500" title="oreste">
-</p>
-
 ## What is the oreste
 
-oreste is a fastest OSINT Tool for emails. It helps you gather information about the target email.
+Oreste is yet another OSINT Tool for research porposes only. It allows you to gather information about the target via email, phone or image and generate an report.
 
 #### Features: :eyes:
 
@@ -17,6 +13,9 @@ oreste is a fastest OSINT Tool for emails. It helps you gather information about
 - Scan Pastebin Dumps
 - Google Search
 - DNS/IP Lookup
+- Google Dorks
+- Phone Registries
+- Reverse Image Search
 
 ## Services (APIs):
 
@@ -50,10 +49,8 @@ go install -v github.com/alpkeskin/oreste@latest
 
 ## Usage:
 
+Email(mosint):
+
 ```
 oreste example@email.com
 ```
-
-## Screen :
-
-[![oreste](https://asciinema.org/a/529726.svg)](https://asciinema.org/a/529726)
