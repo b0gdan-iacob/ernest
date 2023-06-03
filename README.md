@@ -44,7 +44,7 @@ Oreste is yet another OSINT Tool for research porposes only. It allows you to ga
 ## Installation:
 
 ```
-go install -v github.com/alpkeskin/oreste@latest
+go install -v github.com/b0gdan-iacob/oreste@latest
 ```
 
 ## Usage:

@@ -6,7 +6,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/alpkeskin/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/oreste/cmd/utils"
 	"github.com/dimiro1/banner"
 	"github.com/mattn/go-colorable"
 	"github.com/schollz/progressbar/v3"

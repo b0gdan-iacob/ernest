@@ -1,4 +1,4 @@
-module github.com/alpkeskin/oreste
+module github.com/b0gdan-iacob/oreste
 
 go 1.19
 

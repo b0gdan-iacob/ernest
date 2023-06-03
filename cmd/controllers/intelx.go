@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/IntelligenceX/SDK/Go/ixapi"
-	"github.com/alpkeskin/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/oreste/cmd/utils"
 )
 
 func Intelx(email string) {

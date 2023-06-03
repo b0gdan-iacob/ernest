@@ -4,7 +4,7 @@
 package controllers
 
 import (
-	"github.com/alpkeskin/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/oreste/cmd/utils"
 	googlesearch "github.com/rocketlaunchr/google-search"
 )
 

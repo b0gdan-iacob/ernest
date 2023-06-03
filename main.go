@@ -3,7 +3,7 @@
 
 package main
 
-import "github.com/alpkeskin/oreste/cmd"
+import "github.com/b0gdan-iacob/oreste/cmd"
 
 func main() {
 	cmd.Execute()

@@ -6,8 +6,8 @@ package cmd
 import (
 	"os"
 
-	"github.com/alpkeskin/oreste/cmd/controllers"
-	"github.com/alpkeskin/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/oreste/cmd/controllers"
+	"github.com/b0gdan-iacob/oreste/cmd/utils"
 	"github.com/fatih/color"
 	"github.com/gammazero/workerpool"
 	"github.com/spf13/cobra"

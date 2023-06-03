@@ -7,7 +7,7 @@ import (
 	"os"
 
 	emailverifier "github.com/AfterShip/email-verifier"
-	"github.com/alpkeskin/oreste/cmd/models"
+	"github.com/b0gdan-iacob/oreste/cmd/models"
 	"github.com/olekukonko/tablewriter"
 	"github.com/schollz/progressbar/v3"
 )
@@ -29,8 +29,8 @@ var (
 	ProgressBar    *progressbar.ProgressBar = nil
 	LookupTable    *tablewriter.Table       = tablewriter.NewWriter(os.Stdout)
 	BannerTemplate string                   = `{{ .Title "oreste" "" 2 }}
-{{ .AnsiColor.BrightWhite }}v2.3{{ .AnsiColor.Default }}
-{{ .AnsiColor.BrightCyan }}https://github.com/alpkeskin/{{ .AnsiColor.Default }}
+{{ .AnsiColor.BrightWhite }}v0.1{{ .AnsiColor.Default }}
+{{ .AnsiColor.BrightCyan }}{{ .AnsiColor.Default }}
 Now: {{ .Now "Monday, 2 Jan 2006" }}`
 )
 

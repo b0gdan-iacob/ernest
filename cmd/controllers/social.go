@@ -13,8 +13,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/alpkeskin/oreste/cmd/models"
-	"github.com/alpkeskin/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/oreste/cmd/models"
+	"github.com/b0gdan-iacob/oreste/cmd/utils"
 )
 
 func Adobe(email string) {

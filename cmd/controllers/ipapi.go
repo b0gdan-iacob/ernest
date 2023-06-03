@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/alpkeskin/oreste/cmd/utils"
+	"github.com/b0gdan-iacob/oreste/cmd/utils"
 )
 
 func IPAPI(email string) {

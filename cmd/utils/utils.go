@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/alpkeskin/oreste/cmd/models"
+	"github.com/b0gdan-iacob/oreste/cmd/models"
 	"github.com/fatih/color"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
