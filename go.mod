@@ -1,4 +1,4 @@
-module github.com/alpkeskin/mosint
+module github.com/alpkeskin/oreste
 
 go 1.19
 

@@ -1,7 +1,5 @@
-// mosint v2.3
-// Author: Alp Keskin
-// Github: github.com/alpkeskin
-// Linkedin: linkedin.com/in/alpkeskin
+// oreste v0.1
+
 
 package controllers
 
@@ -12,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/alpkeskin/mosint/cmd/utils"
+	"github.com/alpkeskin/oreste/cmd/utils"
 )
 
 func IPAPI(email string) {
@@ -28,7 +26,7 @@ func IPAPI(email string) {
 	if ip4api != "" {
 		client := &http.Client{}
 		req, _ := http.NewRequest("GET", utils.IPAPIURL+ip4api+"/json/", nil)
-		req.Header.Set("User-Agent", "mosint")
+		req.Header.Set("User-Agent", "oreste")
 		resp, _ := client.Do(req)
 		body, _ := io.ReadAll(resp.Body)
 		json.Unmarshal(body, &utils.Ipapi_result)

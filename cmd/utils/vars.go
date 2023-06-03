@@ -1,7 +1,5 @@
-// mosint v2.3
-// Author: Alp Keskin
-// Github: github.com/alpkeskin
-// Linkedin: linkedin.com/in/alpkeskin
+// oreste v0.1
+
 
 package utils
 
@@ -9,7 +7,7 @@ import (
 	"os"
 
 	emailverifier "github.com/AfterShip/email-verifier"
-	"github.com/alpkeskin/mosint/cmd/models"
+	"github.com/alpkeskin/oreste/cmd/models"
 	"github.com/olekukonko/tablewriter"
 	"github.com/schollz/progressbar/v3"
 )
@@ -30,7 +28,7 @@ var (
 	ConfigReturn   map[string]interface{}
 	ProgressBar    *progressbar.ProgressBar = nil
 	LookupTable    *tablewriter.Table       = tablewriter.NewWriter(os.Stdout)
-	BannerTemplate string                   = `{{ .Title "mosint" "" 2 }}
+	BannerTemplate string                   = `{{ .Title "oreste" "" 2 }}
 {{ .AnsiColor.BrightWhite }}v2.3{{ .AnsiColor.Default }}
 {{ .AnsiColor.BrightCyan }}https://github.com/alpkeskin/{{ .AnsiColor.Default }}
 Now: {{ .Now "Monday, 2 Jan 2006" }}`

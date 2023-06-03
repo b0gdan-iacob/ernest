@@ -1,7 +1,5 @@
-// mosint v2.3
-// Author: Alp Keskin
-// Github: github.com/alpkeskin
-// Linkedin: linkedin.com/in/alpkeskin
+// oreste v0.1
+
 
 package controllers
 
@@ -10,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/IntelligenceX/SDK/Go/ixapi"
-	"github.com/alpkeskin/mosint/cmd/utils"
+	"github.com/alpkeskin/oreste/cmd/utils"
 )
 
 func Intelx(email string) {

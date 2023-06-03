@@ -1,7 +1,5 @@
-// mosint v2.3
-// Author: Alp Keskin
-// Github: github.com/alpkeskin
-// Linkedin: linkedin.com/in/alpkeskin
+// oreste v0.1
+
 
 package controllers
 
@@ -10,7 +8,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/alpkeskin/mosint/cmd/utils"
+	"github.com/alpkeskin/oreste/cmd/utils"
 )
 
 func Psbdmp(email string) {
@@ -24,7 +22,7 @@ func Psbdmp(email string) {
 	if err != nil {
 		panic(err)
 	}
-	req.Header.Set("User-Agent", "mosint")
+	req.Header.Set("User-Agent", "oreste")
 	resp, err := client.Do(req)
 	if err != nil {
 		panic(err)

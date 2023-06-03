@@ -1,14 +1,12 @@
-// mosint v2.3
-// Author: Alp Keskin
-// Github: github.com/alpkeskin
-// Linkedin: linkedin.com/in/alpkeskin
+// oreste v0.1
+
 
 package cmd
 
 import (
 	"os"
 
-	"github.com/alpkeskin/mosint/cmd/utils"
+	"github.com/alpkeskin/oreste/cmd/utils"
 	"github.com/dimiro1/banner"
 	"github.com/mattn/go-colorable"
 	"github.com/schollz/progressbar/v3"
@@ -16,7 +14,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:          "mosint [email]",
+	Use:          "oreste [email]",
 	Short:        "\nAn automated e-mail OSINT tool",
 	Long:         "\nAn automated e-mail OSINT tool",
 	SilenceUsage: true,
